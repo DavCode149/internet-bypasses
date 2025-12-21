@@ -1,8 +1,23 @@
 [
   {
-    "name": "Proxy Alpha",
-    "type": "Alpha",
-    "url": "/proxy/alpha",
-    "status": "online"
+    "id": "interstellar",
+    "name": "Interstellar",
+    "image": "/images/interstellar.png",
+    "description": "The GOAT of most proxies.",
+    "links": [
+      { "label": "Main", "url": "https://uv.example.com" },
+      { "label": "Mirror 1", "url": "https://uv1.example.com" },
+      { "label": "Mirror 2", "url": "https://uv2.example.com" }
+    ]
+  },
+  {
+    "id": "emerald",
+    "name": "Emerald",
+    "image": "/images/emerald.png"
+    "description": "Speedy and user-friendly browser.",
+    "links": [
+      { "label": "Primary", "url": "https://ram.example.com" },
+      { "label": "Backup", "url": "https://ram2.example.com" }
+    ]
   }
 ]
