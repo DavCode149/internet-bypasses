@@ -9,18 +9,48 @@
   });
 
   function triggerPanic() {
-    // ===== DEFINE ACTION LATER =====
+  // Prevent duplicate overlays
+  if (document.getElementById('panic-overlay')) return;
 
-    // Example 1: Redirect instantly
-    // window.location.href = 'https://classroom.google.com';
+  // Overlay
+  const overlay = document.createElement('div');
+  overlay.id = 'panic-overlay';
+  overlay.style.cssText = `
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+  `;
 
-    // Example 2: Blank page
-    // document.body.innerHTML = '';
-    // document.title = 'Google Docs';
+  // Close button
+  const close = document.createElement('div');
+  close.innerHTML = '✕';
+  close.style.cssText = `
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000000;
+    user-select: none;
+  `;
+  close.onclick = () => overlay.remove();
 
-    // Example 3: Close tab (may not always work)
-    // window.close();
+  // Iframe
+  const iframe = document.createElement('iframe');
+  iframe.src = 'https://classroom.google.com';
+  iframe.style.cssText = `
+    width: 100%;
+    height: 100%;
+    border: none;
+    flex: 1;
+  `;
 
-    console.log('PANIC KEY ACTIVATED');
-  }
+  overlay.appendChild(close);
+  overlay.appendChild(iframe);
+  document.body.appendChild(overlay);
+}
 })();
