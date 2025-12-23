@@ -13,7 +13,7 @@
   {
     "id": "emerald",
     "name": "Emerald",
-    "image": "/images/emerald.png"
+    "image": "/images/emerald.png",
     "description": "Speedy and user-friendly browser.",
     "links": [
       { "label": "Primary", "url": "https://ram.example.com" },
