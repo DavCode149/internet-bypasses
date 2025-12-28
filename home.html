@@ -238,7 +238,7 @@
       });
 
   //Load pastebin raw text
-  fetch("https://pastebin.com/raw/djzAdM4j")
+  fetch("https://cors.io/?u=https://pastebin.com/raw/djzAdM4j")
     .then(res => res.text())
     .then(text => {
       document.getElementById("system-text").textContent = text;
