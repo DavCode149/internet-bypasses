@@ -238,10 +238,10 @@
       });
 
   //Load pastebin raw text
-   fetch("https://api.allorigins.win/get?url=https://pastebin.com/raw/djzAdM4j")
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById("system-text").textContent = data.body;
+   fetch("https://corsproxy.io/?url=https://pastebin.com/raw/djzAdM4j")
+    .then(res => res.text())
+    .then(text => {
+      document.getElementById("system-text").textContent = text;
     })
     .catch(() => {
       document.getElementById("system-text").textContent =
