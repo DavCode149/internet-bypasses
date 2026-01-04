@@ -32,8 +32,9 @@
       margin: auto;
     }
 
-    /* Back button (always visible in article view) */
-    .back-fixed {
+    /* Fixed buttons */
+    .back-fixed,
+    .home-fixed {
       position: fixed;
       top: 18px;
       left: 18px;
@@ -47,6 +48,10 @@
       text-decoration: none;
       font-size: 0.9rem;
       display: none;
+    }
+
+    .home-fixed {
+      color: #a7f3d0;
     }
 
     h1 {
@@ -129,7 +134,9 @@
 </head>
 <body>
 
+<!-- Buttons -->
 <a href="article.html" class="back-fixed" id="backBtn">← Back to selection</a>
+<a href="home.html" class="home-fixed" id="homeBtn">← Home</a>
 
 <div class="container" id="container"></div>
 
@@ -138,6 +145,7 @@
   const articleId = params.get("id");
   const container = document.getElementById("container");
   const backBtn = document.getElementById("backBtn");
+  const homeBtn = document.getElementById("homeBtn");
 
   fetch("data/news.json")
     .then(res => res.json())
@@ -147,6 +155,8 @@
          ARTICLE SELECTION VIEW
          ====================== */
       if (!articleId) {
+        homeBtn.style.display = "inline-block";
+
         const grid = document.createElement("div");
         grid.className = "grid";
 
