@@ -237,7 +237,7 @@
       });
 
   //Load pastebin raw text
-   fetch("https://crossorigin.me/https://pastebin.com/raw/G8eHUvtd")
+   fetch("https://api.codetabs.com/v1/proxy?quest=https://pastebin.com/raw/G8eHUvtd")
     .then(res => res.text())
     .then(text => {
       document.getElementById("system-text").textContent = text;
