@@ -47,8 +47,8 @@
     "description": "Peak Browser. 99% of websites work on it.",
     "image": "images/shadow.png",
     "links": [
-      { "label": "Link 1", "url": "https://novahistory.ibernoticias.com" }
-      { "label": "Link 2", "url": "https://lunarhistory.galaxybbs.net/" }
+      { "label": "Link 1", "url": "https://novahistory.ibernoticias.com" },
+      { "label": "Link 2", "url": "https://lunarhistory.galaxybbs.net/" },
       { "label": "Backup Link", "url": "https://clevercoding.fatibara.com/" }
     ]
   }
