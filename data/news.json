@@ -1,28 +1,15 @@
 [
   {
-    "id": "dashboard-launch",
-    "title": "Dashboard Launched",
-    "date": "2025-12-",
+    "id": "welcome1",
+    "title": "Welcome to SecondTab!",
+    "date": "2026-02-15",
     "author": "SecondTab",
-    "summary": "The new dashboard system is now live.",
+    "summary": "Get to know the site!",
     "image": "none",
     "content": [
-      "Today we officially launched the new SecondTab dashboard.",
-      "This update introduces a cleaner layout, faster navigation, and future expansion support.",
-      "More features like dynamic content and user customization are coming soon."
-    ]
-  },
-  {
-    "id": "release-date-confirmed",
-    "title": "Official Release Date Confirmed!",
-    "date": "2025-01-03",
-    "author": "SecondTab",
-    "summary": "Release date of January 7th Confirmed",
-    "image": "none",
-    "content": [
-      "We're exited to annouce our official release date!",
-      "We'll be opening SecondTab to the public on January 10th.",
-      "We've added safeguards to make sure none of the links get blocked, and we can always change them if they do."
+      "Welcome to SecondTab! A brand new website for accessing Proxies and other useful resources to take back control of the internet on restricted networks.",
+      "Check out the Proxies tab for ways to access blocked sites, or check out our official games site!",
+      "More features will be coming out soon to improve the site. Join our Discord while you're at it to stay updated. The invite link can be found in the Links tab."
     ]
   }
 ]

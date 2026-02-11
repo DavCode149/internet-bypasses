@@ -188,7 +188,22 @@
 
     <footer>© 2025 SecondTab — Dashboard</footer>
   </main>
+  <script> 
+  const url = "https://raw.githubusercontent.com/DavCode149/dd-games/refs/heads/main/assets/games.json";
 
+  async function getGitHubCount() {
+      try {
+         const response = await fetch(url);
+          const data = await response.json();
+        
+          // Count entries and update text
+          document.getElementById('games-count').textContent = data.length;
+      } catch (e) {
+          console.error("Failed to fetch from GitHub:", e);
+          document.getElementById('games-count').textContent = "?";
+      }
+  }
+  </script>
   <script>
     // Load Quick Links
     fetch('data/links.json')
@@ -203,13 +218,6 @@
           container.appendChild(a);
         });
         document.getElementById('links-count').textContent = links.length;
-      });
-
-    // Load Games
-    fetch('data/games.json')
-      .then(res => res.json())
-      .then(games => {
-        document.getElementById('games-count').textContent = games.length;
       });
 
     // Load Proxies
