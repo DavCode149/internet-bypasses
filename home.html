@@ -253,7 +253,7 @@
       });
 
   //Load pastebin raw text
-   fetch("https://crossorigin.me/https://pastebin.com/raw/G8eHUvtd")
+   fetch("https://api.allorigins.win/raw?url=https://pastebin.com/raw/G8eHUvtd")
     .then(res => res.text())
     .then(text => {
       document.getElementById("system-text").textContent = text;
