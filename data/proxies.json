@@ -40,7 +40,7 @@
     "links": [
       { "label": "Link 1 (Only Link for now)", "url": "https://davastroidv3.vercel.app/" }
     ]
-  }
+  },
   {
     "id": "shadow",
     "name": "Shadow",
