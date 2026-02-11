@@ -189,20 +189,28 @@
     <footer>© 2025 SecondTab — Dashboard</footer>
   </main>
   <script> 
-  const url = "https://raw.githubusercontent.com/DavCode149/dd-games/refs/heads/main/assets/games.json";
+  async function updateGameCount() {
+    // 1. Use your RAW GitHub URL here
+    const url = "https://raw.githubusercontent.com/DavCode149/dd-games/refs/heads/main/assets/games.json?t=" + new Date().getTime();
+    const display = document.getElementById('games-count');
 
-  async function getGitHubCount() {
-      try {
-         const response = await fetch(url);
-          const data = await response.json();
-        
-          // Count entries and update text
-          document.getElementById('games-count').textContent = data.length;
-      } catch (e) {
-          console.error("Failed to fetch from GitHub:", e);
-          document.getElementById('games-count').textContent = "?";
-      }
+    try {
+      const response = await fetch(url);
+      
+      if (!response.ok) throw new Error("File not found");
+
+      const data = await response.json();
+
+      const total = data.length;
+
+      display.textContent = total;
+
+    } catch (error) {
+      console.error("Error:", error);
+      display.textContent = "?";
+    }
   }
+  updateGameCount();
   </script>
   <script>
     // Load Quick Links
