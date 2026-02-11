@@ -179,6 +179,11 @@
     function OpenLink() {
     javascript: var win = window.open();   win.document.body.style.margin = '0';   win.document.body.style.height = '100vh';   var iframe = win.document.createElement('iframe');   iframe.style.border = 'none';   iframe.style.width = '100%';   iframe.style.height = '100%';   iframe.style.margin = '0';   iframe.src = "home.html";   win.document.body.appendChild(iframe);
     }
+    if (localStorage.getItem(DEV) === "true") {
+        location.href='home.html'
+      } else {
+        alert("For Security Reaons, this button is disabled. Please use the other button to hide this site from your history.")
+      }
 </script>
   <div class="blob one"></div>
   <div class="blob two"></div>
