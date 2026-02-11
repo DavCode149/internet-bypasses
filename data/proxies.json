@@ -23,13 +23,33 @@
   },
   {
     "id": "dogeub",
-    "name": "Doge Unblocked",
+    "name": "Doge Unblocked (DOWN)",
     "description": "D O G E",
     "image": "images/doge.png",
     "links": [
       { "label": "Link 1", "url": "https://ytkvgvdarb.balkrishnatamang.com.np/" },
       { "label": "Link 2", "url": "https://sjaswnzvvx.szczech.com.ar/" },
       { "label": "Backup Link", "url": "https://nwhncebnyl.einfach-du.ch/" }
+    ]
+  },
+  {
+    "id": "asteroid",
+    "name": "Asteroid",
+    "description": "Hides itself as a math site. Click on any button to open.",
+    "image": "images/asteroid.png",
+    "links": [
+      { "label": "Link 1 (Only Link for now)", "url": "https://davastroidv3.vercel.app/" }
+    ]
+  }
+  {
+    "id": "shadow",
+    "name": "Shadow",
+    "description": "Peak Browser. 99% of websites work on it.",
+    "image": "images/shadow.png",
+    "links": [
+      { "label": "Link 1", "url": "https://novahistory.ibernoticias.com" }
+      { "label": "Link 2", "url": "https://lunarhistory.galaxybbs.net/" }
+      { "label": "Backup Link", "url": "https://clevercoding.fatibara.com/" }
     ]
   }
 ]
