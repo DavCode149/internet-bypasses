@@ -183,7 +183,9 @@
     function checkForDev() {
     if (localStorage.getItem(DEV) === "true") {
         console.log("Dev detected. Opening Normally")
-        location.href='home.html'
+        setTimeout(() => {
+          location.href='home.html'
+        }, 3000);
       } else {
         alert("For Security Reaons, this button is disabled. Please use the other button to hide this site from your history.")
       }
